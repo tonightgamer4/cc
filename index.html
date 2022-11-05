@@ -2,41 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exp 8</title>
-    <style>
-        #box {
-            background-color: red;
-            height: 80vh;
-            width: 80vw;
-            margin: auto;
-        }
 
-        #fname {
-            width: 80vw;
-            margin: auto;
-        }
-    </style>
+    <!-- === Design by: Pranav Rajkumar Bhutada ===--->
+    <title>LGM Task 1 : Simple To Do List</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <h1>Keyur Aghao <br>42401</h1>
-    <div id="box" onmouseover="change()" onmouseleave="changer()"></div>
-    <br>
-    <input type="text" id="fname" onfocus="myFunction()">
-    <script>
-        function change() {
-            document.getElementById('box').style.backgroundColor = "blue"
-        }
-        function changer() {
-            document.getElementById('box').style.backgroundColor = "red"
-        }
-        function myFunction() {
-            document.getElementById("fname").style.backgroundColor = "red";
-        }
-    </script>
+    <div class="container">
+        <h1 style="text-align: center;">LGM Task 1 : Simple To Do List</h1>
+        <div id="newtask">
+            <input type="text" placeholder="Task to be done..">
+            <button id="push">Add</button>
+        </div>
+
+        <div id="tasks"></div>
+    </div>
+    <!--Script-->
+    <script src="/main.js"></script>
 </body>
 
 </html>
